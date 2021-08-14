@@ -1,3 +1,4 @@
+import './App.css';
 import React, { Component } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -7,6 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        
         <Header />
         <ProductItem productName="IPhone X" unitPrice="40500" />
         <ProductItem productName="iPad Pro 10.5" unitPrice="30500" />

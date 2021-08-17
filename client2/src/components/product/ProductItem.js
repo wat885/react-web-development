@@ -5,6 +5,7 @@ class ProductItem extends Component {
     super(props);
     // console.log("constructor|" + props.productName);
   }
+
   render() {
     const { productName, unitPrice, thumbnail } = this.props;
     return (
@@ -12,8 +13,16 @@ class ProductItem extends Component {
         <img className="img-fluid img-thumbnail" src={thumbnail} />
         <h5 className="mt-2">{productName}</h5>
         <p className="text-right title">{unitPrice} THB</p>
-        <button className="btn- btn-block btn-secondary title">ซื้อ</button>
-        <hr/>
+        <button
+          className="btn- btn-block btn-secondary title"
+          // onClick={() => console.log(productName)}
+          value={unitPrice}
+          onClick={(e) => console.log(e.target.className)}
+          // onClick={(e) => console.log(e.target.value)}
+        >
+          ซื้อ
+        </button>
+        <hr />
       </div>
     );
   }

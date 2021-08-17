@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Calculator from "./Calculator";
 import ProductList from "../product/ProductList";
 
-class Monitor extends Component {
+export class Monitor extends Component {
   render() {
     return (
       <div className="container-fluid">

@@ -1,14 +1,17 @@
-import "./App.css";
-import React, { Component } from "react";
-import Footer from "./components/Footer";
+import './App.css'
+import React, { Component } from 'react';
 import Header from "./components/Header";
-import Monitor from "./components/monitor/Monitor";
+import Monitor from "./components/monitor/Monitor"
+import Footer from "./components/Footer";
 import ProductItem from "./components/product/ProductItem";
 
+
 class App extends Component {
+
+  
   constructor(props) {
     super(props);
-    this.state = { products: "" };
+    this.state = {products : ""};
   }
 
   componentDidMount() {
@@ -22,15 +25,20 @@ class App extends Component {
   ]})
   }
 
+
   render() {
     return (
       <div className="App">
         <Header />
-        <Monitor products= {this.state.products} />
+        <Monitor products={this.state.products} />
+
+
+        {/* <ProductItem productName="IPhone X" unitPrice="40500" />
+        <ProductItem productName="iPad Pro 10.5" unitPrice="30500" />
+        <ProductItem productName="iPad Mini 4 " unitPrice="19500" /> */}
         <Footer company="Olanlab" email="olan@olanlab.com" />
       </div>
     );
   }
 }
-
 export default App;

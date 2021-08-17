@@ -13,10 +13,10 @@
     src: url('/fonts/Prompt-Bold.ttf');
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Prompt-Medium'
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Prompt-Medium';
 }
 
-.title{
+.title {
     font-family: 'Prompt-Regular';
 }

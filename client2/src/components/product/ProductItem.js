@@ -7,7 +7,7 @@ class ProductItem extends Component {
   }
 
   render() {
-    const { productName, unitPrice, thumbnail } = this.props;
+    const { productName, unitPrice, thumbnail } = this.props.product;
     return (
       <div className="col-md-3 col-sm-6">
         <img className="img-fluid img-thumbnail" src={thumbnail} />
@@ -15,9 +15,12 @@ class ProductItem extends Component {
         <p className="text-right title">{unitPrice} THB</p>
         <button
           className="btn- btn-block btn-secondary title"
+          onClick={() => this.props.onAddOrder(this.props.product)}
+
+
           // onClick={() => console.log(productName)}
-          value={unitPrice}
-          onClick={(e) => console.log(e.target.className)}
+          // value={unitPrice}
+          // onClick={(e) => console.log(e.target.className)}
           // onClick={(e) => console.log(e.target.value)}
         >
           ซื้อ

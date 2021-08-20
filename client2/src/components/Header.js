@@ -5,7 +5,7 @@ class Header extends Component {
     super(props);
     this.state = { date: new Date() };
 
-    console.log("constructor");
+    // console.log("constructor");
   }
 
   componentDidMount() {

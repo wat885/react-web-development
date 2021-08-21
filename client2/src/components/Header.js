@@ -42,6 +42,7 @@ class Header extends Component {
             </h5>
           </div>
         </div>
+        <hr />
       </div>
     );
   }

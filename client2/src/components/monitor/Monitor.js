@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Calculator from "./Calculator";
 import ProductList from "../product/ProductList";
+import axios from "axios";
 
 export class Monitor extends Component {
   constructor(props) {
@@ -8,6 +9,8 @@ export class Monitor extends Component {
     this.state = { totalPrice: 0, orders: [] };
     this.addOrder = this.addOrder.bind(this);
     this.delOrder = this.delOrder.bind(this);
+    this.confirmOrder = this.confirmOrder.bind(this);
+    this.cancelOrder = this.cancelOrder.bind(this);
   }
 
   addOrder(product) {
@@ -21,6 +24,7 @@ export class Monitor extends Component {
     }
     const totalPrice = this.state.totalPrice + parseInt(product.unitPrice);
     this.setState({ totalPrice: totalPrice, orders: this.state.orders });
+    // console.log(this.state.orders);
   }
 
   delOrder(product) {
@@ -29,12 +33,33 @@ export class Monitor extends Component {
     );
     let resultOrder = this.state.orders.filter(
       (order) => order.product.productId != product.productId
-    ); // filter ให้เอาตัวที่ไม่ต้องการลบออกมา   resultOrder คือตัวที่เหลือหลังจากลบ
+    ); // filter ให้เอาตัวที่ไม่ต้องการลบออกมา
     const totalPrice =
       this.state.totalPrice -
       findOrder.quantity * parseInt(findOrder.product.unitPrice);
     this.setState({ totalPrice: totalPrice, orders: resultOrder });
+
+    console.log(resultOrder);
   }
+  
+  confirmOrder() {
+    const {totalPrice, orders} = this.state;
+
+
+
+    axios.post('http://localhost:3001/orders', {orderedDate: new Date(), totalPrice, orders })
+    .then(res => {
+      this.setState({ totalPrice: 0, orders: [] });
+    })
+    
+  }
+
+  cancelOrder() {
+    // console.log("cancelOrder");
+    this.setState({ totalPrice: 0, orders: [] });
+  }
+
+
 
   render() {
     return (
@@ -51,6 +76,8 @@ export class Monitor extends Component {
               totalPrice={this.state.totalPrice}
               orders={this.state.orders}
               onDelOrder={this.delOrder}
+              onCancelOrder={this.cancelOrder}
+              onConfirmOrder={this.confirmOrder}
             />
           </div>
         </div>

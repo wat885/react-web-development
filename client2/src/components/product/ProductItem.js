@@ -25,6 +25,7 @@ class ProductItem extends Component {
         >
           ซื้อ
         </button>
+
         <hr />
       </div>
     );

@@ -9,6 +9,7 @@ class App extends Component {
   renderRouter() {
     return (
       <Switch>
+        {/* exact คือต้องเป็นแบบใน path=" "เท่านั้น */}
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
       </Switch>

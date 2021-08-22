@@ -89,6 +89,7 @@ export class Monitor extends Component {
   render() {
     return (
       <div className="container-fluid">
+        {/* ถ้า confirm เป็น t ทำงาน */}
         {this.state.confirm && (
           <div className="alert alert-secondary title text-right" role="alert">
             {this.state.msg}

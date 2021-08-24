@@ -34,6 +34,8 @@ class Home extends Component {
       {this.setState({ products: res.data })}
     })
 
+    // json-server --watch resources/data/db.json --port 3001
+
 
   }
 

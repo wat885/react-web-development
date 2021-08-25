@@ -13,18 +13,32 @@ class ProductItem extends Component {
         <img className="img-fluid img-thumbnail" src={thumbnail} />
         <h5 className="mt-2">{productName}</h5>
         <p className="text-right title">{unitPrice} THB</p>
-        <button
-          className="btn- btn-block btn-secondary title"
-          onClick={() => this.props.onAddOrder(this.props.product)}
 
+        {this.props.onAddOrder && (
+          <button
+            className="btn btn-block btn-secondary title"
+            onClick={() => this.props.onAddOrder(this.props.product)}
+            // onClick={() => console.log(productName)}
+            // value={unitPrice}
+            // onClick={(e) => console.log(e.target.className)}
+            // onClick={(e) => console.log(e.target.value)}
+          >
+            ซื้อ
+          </button>
+        )}
 
-          // onClick={() => console.log(productName)}
-          // value={unitPrice}
-          // onClick={(e) => console.log(e.target.className)}
-          // onClick={(e) => console.log(e.target.value)}
-        >
-          ซื้อ
-        </button>
+        {(this.props.onDelProduct || this.props.onEditProduct) && (
+          <button className="btn  btn-info title col-5">แก้ไข</button>
+        )}
+
+        {(this.props.onDelProduct || this.props.onEditProduct) && (
+          <button
+            className="btn  btn-danger title col-5 float-right"
+            onClick={() => this.props.onDelProduct(this.props.product)}
+          >
+            ลบ
+          </button>
+        )}
 
         <hr />
       </div>

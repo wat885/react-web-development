@@ -11,6 +11,7 @@ export class ProductList extends Component {
           key={product.id}
           product={product}
           onAddOrder={this.props.onAddOrder}
+          onDelProduct={this.props.onDelProduct}
         /> //พอเป็น list ต้องใส่ key  ที่ unique
       ))
     );

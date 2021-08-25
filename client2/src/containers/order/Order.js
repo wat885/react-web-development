@@ -19,7 +19,7 @@ export class Order extends Component {
   }
 
   delOrder(order) {
-    axios.delete("http://localhost:3001/orders" + order.id).then((res) => {
+    axios.delete("http://localhost:3001/orders/" + order.id).then((res) => {
       axios.get("http://localhost:3001/orders").then((res) => {
         this.setState({ orders: res.data });
       });
@@ -38,7 +38,7 @@ export class Order extends Component {
             <p className="text-right">
               <button
                 className="btn btn-danger btn0sm title"
-                onClick={this.delOrder(order)}
+                onClick={() => this.delOrder(order)}
               >
                 x
               </button>

@@ -10,15 +10,15 @@ class Order extends Component {
 	}
 
 	componentDidMount() {
-		axios.get("http://localhost:3001/orders").then(response => {
-			this.setState({orders: response.data});
+		axios.get("http://localhost:3001/orders").then(res => {
+			this.setState({orders: res.data});
 		});
     }
 
     delOrder(order) {
-        axios.delete("http://localhost:3001/orders/" + order.id).then(response => {
-            axios.get("http://localhost:3001/orders").then(response => {
-                this.setState({orders: response.data});
+        axios.delete("http://localhost:3001/orders/" + order.id).then(res => {
+            axios.get("http://localhost:3001/orders").then(res => {
+                this.setState({orders: res.data});
             });
         });
     }

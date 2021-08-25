@@ -8,7 +8,7 @@ export class ProductList extends Component {
       this.props.products.map((product) => (
         // <ProductItem productName={product.productName} unitPrice={product.unitPrice} />
         <ProductItem
-          key={product.productId}
+          key={product.id}
           product={product}
           onAddOrder={this.props.onAddOrder}
         /> //พอเป็น list ต้องใส่ key  ที่ unique

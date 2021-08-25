@@ -1,37 +1,37 @@
 {
   "products": [
     {
-      "productId": "P001",
+      "id": 1,
       "productName": "สลัดผัก",
       "unitPrice": "120",
       "thumbnail": "/images/product/1.jpg"
     },
     {
-      "productId": "P002",
+      "id": 2,
       "productName": "ไก่ทอด",
       "unitPrice": "90",
       "thumbnail": "/images/product/2.jpg"
     },
     {
-      "productId": "P003",
+      "id": 3,
       "productName": "บิงซู",
       "unitPrice": "200",
       "thumbnail": "/images/product/3.jpg"
     },
     {
-      "productId": "P004",
+      "id": 4,
       "productName": "เฟรนฟราย",
       "unitPrice": "140",
       "thumbnail": "/images/product/4.jpg"
     },
     {
-      "productId": "P005",
+      "id": 5,
       "productName": "เค้ก 3 ชั้น",
       "unitPrice": "200",
       "thumbnail": "/images/product/5.jpg"
     },
     {
-      "productId": "P006",
+      "id": 6,
       "productName": "กาแฟ เฮลตี้ฟู้ด",
       "unitPrice": "140",
       "thumbnail": "/images/product/6.jpg"
@@ -44,7 +44,7 @@
       "orders": [
         {
           "product": {
-            "productId": "P004",
+            "id": 4,
             "productName": "เฟรนฟราย",
             "unitPrice": "140",
             "thumbnail": "/images/product/4.jpg"
@@ -53,7 +53,7 @@
         },
         {
           "product": {
-            "productId": "P003",
+            "id": 3,
             "productName": "บิงซู",
             "unitPrice": "200",
             "thumbnail": "/images/product/3.jpg"
@@ -69,7 +69,7 @@
       "orders": [
         {
           "product": {
-            "productId": "P002",
+            "id": 2,
             "productName": "ไก่ทอด",
             "unitPrice": "90",
             "thumbnail": "/images/product/2.jpg"
@@ -78,7 +78,7 @@
         },
         {
           "product": {
-            "productId": "P006",
+            "id": 3,
             "productName": "กาแฟ เฮลตี้ฟู้ด",
             "unitPrice": "140",
             "thumbnail": "/images/product/6.jpg"
@@ -94,7 +94,7 @@
       "orders": [
         {
           "product": {
-            "productId": "P004",
+            "id": 4,
             "productName": "เฟรนฟราย",
             "unitPrice": "140",
             "thumbnail": "/images/product/4.jpg"
@@ -110,7 +110,7 @@
       "orders": [
         {
           "product": {
-            "productId": "P004",
+            "id": 4,
             "productName": "เฟรนฟราย",
             "unitPrice": "140",
             "thumbnail": "/images/product/4.jpg"
@@ -119,7 +119,7 @@
         },
         {
           "product": {
-            "productId": "P003",
+            "id": 3,
             "productName": "บิงซู",
             "unitPrice": "200",
             "thumbnail": "/images/product/3.jpg"
@@ -128,7 +128,7 @@
         },
         {
           "product": {
-            "productId": "P002",
+            "id": 2,
             "productName": "ไก่ทอด",
             "unitPrice": "90",
             "thumbnail": "/images/product/2.jpg"
@@ -144,7 +144,7 @@
       "orders": [
         {
           "product": {
-            "productId": "P004",
+            "id": 4,
             "productName": "เฟรนฟราย",
             "unitPrice": "140",
             "thumbnail": "/images/product/4.jpg"
@@ -160,7 +160,7 @@
       "orders": [
         {
           "product": {
-            "productId": "P004",
+            "id": 4,
             "productName": "เฟรนฟราย",
             "unitPrice": "140",
             "thumbnail": "/images/product/4.jpg"
@@ -169,7 +169,7 @@
         },
         {
           "product": {
-            "productId": "P003",
+            "id": 3,
             "productName": "บิงซู",
             "unitPrice": "200",
             "thumbnail": "/images/product/3.jpg"
@@ -178,7 +178,7 @@
         },
         {
           "product": {
-            "productId": "P002",
+            "id": 6,
             "productName": "ไก่ทอด",
             "unitPrice": "90",
             "thumbnail": "/images/product/2.jpg"

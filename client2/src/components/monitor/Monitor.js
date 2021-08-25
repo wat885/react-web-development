@@ -15,7 +15,7 @@ export class Monitor extends Component {
 
   addOrder(product) {
     let findOrder = this.state.orders.find(
-      (order) => order.product.productId == product.productId
+      (order) => order.product.id == product.id
     );
     if (findOrder) {
       findOrder.quantity++;
@@ -33,10 +33,10 @@ export class Monitor extends Component {
 
   delOrder(product) {
     let findOrder = this.state.orders.find(
-      (order) => order.product.productId == product.productId
+      (order) => order.product.id == product.id
     );
     let resultOrder = this.state.orders.filter(
-      (order) => order.product.productId != product.productId
+      (order) => order.product.id != product.id
     ); // filter ให้เอาตัวที่ไม่ต้องการลบออกมา
     const totalPrice =
       this.state.totalPrice -

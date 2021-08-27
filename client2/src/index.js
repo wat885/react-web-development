@@ -8,7 +8,7 @@ import { Provider } from "react-redux";
 import { createStore } from "redux";
 import reducers from "./reducers";
 
-// 1.reducers 2.stateเริ่มต้น
+// 1.reducers 2.stateเริ่มต้น 3.middleware redux
 const store = createStore(reducers, {});
 
 ReactDOM.render(

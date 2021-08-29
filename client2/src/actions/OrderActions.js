@@ -1,10 +1,11 @@
 import axios from "axios";
+import {ORDERS_FETCH} from "./types";
 
-// ดึงข้อมูล
+
 export const ordersFetch = () => {
   return (dispatch) => {
     axios.get("http://localhost:3001/orders").then((res) => {
-      dispatch({ type: "orders_fetch", payload: res.data });
+      dispatch({ type: ORDERS_FETCH, payload: res.data });
     });
   };
 };

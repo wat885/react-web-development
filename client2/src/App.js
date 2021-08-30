@@ -7,6 +7,7 @@ import Order from "./containers/order/Order"
 import Product from "./containers/product/Product";
 import NotFound from "./containers/error/NotFound";
 
+// json-server --watch resources/data/db.json --port 3001
 
 
 class App extends Component {

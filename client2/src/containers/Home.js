@@ -47,7 +47,7 @@ class Home extends Component {
         {/* <ProductItem productName="IPhone X" unitPrice="40500" />
         <ProductItem productName="iPad Pro 10.5" unitPrice="30500" />
         <ProductItem productName="iPad Mini 4 " unitPrice="19500" /> */}
-        <Footer company="Olanlab" email="olan@olanlab.com" />
+        <Footer company=" " email=" " />
       </div>
     );
   }

@@ -17,7 +17,7 @@ const About = () => {
         <h3 className="text-success">จาก เฮลตี้คาเฟ่</h3>
       </div>
 
-      <Footer company="Olanlab" email="olan@olanlab.com" />
+      <Footer company=" " email=" " />
     </div>
   );
 };

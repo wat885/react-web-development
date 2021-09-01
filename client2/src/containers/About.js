@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div>
       <Header />
-      <div class="container col-md-5">
+      <div className="container col-md-5">
         <h3>สวัสดีครับ</h3>
         <p className="title text-justify mt-4 mb-4">
           เราคือร้านอาหาร ที่เน้นอาหารอร่อยเท่านั้นจริงๆ

@@ -5,13 +5,15 @@ export class ProductForm extends Component {
   render() {
     return (
       <div>
-        <from></from>
+        <from>
+
+        </from>
       </div>
     );
   }
 }
 
 // ผูก component กับ reduxForm
-ProductForm = reduxForm({ form: "productFrom" })(productFrom);
+ProductForm = reduxForm({ form: "productFrom" })(ProductForm);
 
 export default ProductForm;

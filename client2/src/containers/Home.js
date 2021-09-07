@@ -35,6 +35,7 @@ class Home extends Component {
     //   {this.setState({ products: res.data })}
     // })
 
+    // เรียก action ที่ ProductActions.js
     this.props.productsFetch();
   }
 
@@ -59,9 +60,10 @@ class Home extends Component {
 //   return { products: state.products };
 // }
 function mapStateToProps({products}) {
-  console.log(products);
+  // console.log(products);
   return { products };
 }
 
 // 1.fnc ที่นำค่าจาก store มาใส่ใน props component
 export default connect(mapStateToProps, { productsFetch })(Home);
+// fnc , action

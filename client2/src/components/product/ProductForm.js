@@ -1,13 +1,23 @@
 import React, { Component } from "react";
-import { reduxForm } from "redux-form";
+import { reduxForm, Field } from "redux-form";
 
 export class ProductForm extends Component {
+  renderFields() {
+    const formFields = [
+      { name: "productName", type: "text" },
+      { name: "unitPrice", type: "number" },
+      { name: "thumbnail", type: "text" },
+    ];
+    return formFields.map(({ name, type }) => {
+      return <Field name={name} type={type} component="input" />;
+    });
+  }
+  
+
   render() {
     return (
       <div>
-        <from>
-
-        </from>
+        <from>{this.renderFields()}</from>
       </div>
     );
   }

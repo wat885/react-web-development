@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import ProductForm from "../../components/product/ProductForm";
 import Footer from "../../components/Footer";
 
-export class ProductEdit extends Component {
+class ProductEdit extends Component {
   render() {
     return (
       <div>

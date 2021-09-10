@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { reduxForm, Field } from "redux-form";
 import FormField from "../common/FormField";
-import { productFormFields } from "./formFields";
+import { productFormField } from "./formFields";
 
 export class ProductForm extends Component {
   renderFields(formFields) {
@@ -21,14 +21,18 @@ export class ProductForm extends Component {
   render() {
     return (
       <div>
-        <from>{this.renderFields(productFormFields)}</from>
-        <button className="btn btn-block btn-info title">บันทึก</button>
+        <form>
+          {this.renderFields(productFormField)}
+          <button className="btn btn-block btn-info title" type="submit">
+            บันทึก
+          </button>
+        </form>
       </div>
     );
   }
 }
 
 // ผูก component กับ reduxForm
-ProductForm = reduxForm({ form: "productFrom" })(ProductForm);
+ProductForm = reduxForm({ form: "productForm" })(ProductForm);
 
 export default ProductForm;

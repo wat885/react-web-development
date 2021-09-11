@@ -1,7 +1,7 @@
 import React from "react";
 
-const FormField = ({ input, label, type, required, meta }) => {
-  console.log(meta)
+const FormField = ({ input, label, type, required, meta: {error, touched} }) => {
+  // console.log(error);
   return (
     <div className="form-group">
       <label className="title">{label}</label>
@@ -11,7 +11,9 @@ const FormField = ({ input, label, type, required, meta }) => {
         {...input}
         className="form-control"
       />
-
+      {error && touched && (
+        <div className="mt-2 text-danger title">{error}</div>
+      )}
     </div>
   );
 };

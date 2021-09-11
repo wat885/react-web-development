@@ -1,6 +1,7 @@
 import React from "react";
 
-const FormField = ({ input, label, type, required }) => {
+const FormField = ({ input, label, type, required, meta }) => {
+  console.log(meta)
   return (
     <div className="form-group">
       <label className="title">{label}</label>
@@ -10,6 +11,7 @@ const FormField = ({ input, label, type, required }) => {
         {...input}
         className="form-control"
       />
+
     </div>
   );
 };

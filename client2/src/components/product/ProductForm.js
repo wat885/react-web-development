@@ -20,9 +20,10 @@ export class ProductForm extends Component {
   }
 
   render() {
+    const { onProductSubmit } = this.props;
     return (
       <div>
-        <form>
+        <form onSubmit={this.props.handleSubmit(onProductSubmit)}>
           {this.renderFields(productFormField)}
           <button className="btn btn-block btn-info title" type="submit">
             บันทึก
@@ -34,15 +35,14 @@ export class ProductForm extends Component {
 }
 
 function validate(values) {
-  console.log(values);
+  // console.log(values);
 
   const errors = {};
   //เช็คมีคนกรอกไหม
   productFormField.forEach(({ name, required }) => {
-    if(!values[name] && required) {
-      errors[name] = 'กรุณากรอกข้อมูลด้วยค่ะ'
+    if (!values[name] && required) {
+      errors[name] = "กรุณากรอกข้อมูลด้วยค่ะ";
     }
-
   });
   return errors;
 }

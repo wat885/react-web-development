@@ -36,7 +36,7 @@ class ProductEdit extends Component {
             <div>
               <h2>แก้ไข</h2>
 
-              <ProductForm  onProductSubmit={()=> productCreate(products.id,formValues)} />
+              <ProductForm  onProductSubmit={()=> productUpdate(products.id, formValues)} />
             </div>
           )}
         </div>
@@ -48,7 +48,7 @@ class ProductEdit extends Component {
 
 
 function mapStateToProps ({form, products}) {
-  return { formValues :form.productForm ? form.productForm.value : null, products}
+  return { formValues :form.productForm ? form.productForm.values : null, products}
 }
 
 export default connect(mapStateToProps, {productCreate, productUpdate, productFetch}) (ProductEdit);

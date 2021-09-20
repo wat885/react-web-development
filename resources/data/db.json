@@ -21,7 +21,7 @@
     {
       "id": 4,
       "productName": "เฟรนฟราย",
-      "unitPrice": "140",
+      "unitPrice": "135",
       "thumbnail": "/images/product/4.jpg"
     },
     {
@@ -35,12 +35,18 @@
       "productName": "กาแฟ เฮลตี้ฟู้ด",
       "unitPrice": "140",
       "thumbnail": "/images/product/6.jpg"
+    },
+    {
+      "productName": "ไก่ทอด V.2",
+      "unitPrice": "150",
+      "thumbnail": "/images/product/2.jpg",
+      "id": 7
     }
   ],
   "orders": [
     {
-      "orderedDate": "2021-08-22T03:14:32.458Z",
-      "totalPrice": 420,
+      "orderedDate": "2021-09-19T08:35:08.708Z",
+      "totalPrice": 560,
       "orders": [
         {
           "product": {
@@ -49,14 +55,14 @@
             "unitPrice": "140",
             "thumbnail": "/images/product/4.jpg"
           },
-          "quantity": 3
+          "quantity": 4
         }
       ],
-      "id": 5
+      "id": 8
     },
     {
-      "orderedDate": "2021-08-24T17:39:53.012Z",
-      "totalPrice": 430,
+      "orderedDate": "2021-09-19T08:35:28.894Z",
+      "totalPrice": 1040,
       "orders": [
         {
           "product": {
@@ -78,28 +84,30 @@
         },
         {
           "product": {
-            "id": 6,
+            "id": 2,
             "productName": "ไก่ทอด",
             "unitPrice": "90",
             "thumbnail": "/images/product/2.jpg"
           },
           "quantity": 1
-        }
-      ],
-      "id": 6
-    },
-    {
-      "orderedDate": "2021-08-31T10:20:19.121Z",
-      "totalPrice": 420,
-      "orders": [
+        },
         {
           "product": {
-            "id": 4,
-            "productName": "เฟรนฟราย",
-            "unitPrice": "140",
-            "thumbnail": "/images/product/4.jpg"
+            "id": 1,
+            "productName": "สลัดผัก",
+            "unitPrice": "120",
+            "thumbnail": "/images/product/1.jpg"
           },
-          "quantity": 2
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": 5,
+            "productName": "เค้ก 3 ชั้น",
+            "unitPrice": "200",
+            "thumbnail": "/images/product/5.jpg"
+          },
+          "quantity": 1
         },
         {
           "product": {
@@ -109,9 +117,18 @@
             "thumbnail": "/images/product/6.jpg"
           },
           "quantity": 1
+        },
+        {
+          "product": {
+            "productName": "ไก่ทอด V.2",
+            "unitPrice": "150",
+            "thumbnail": "/images/product/2.jpg",
+            "id": 7
+          },
+          "quantity": 1
         }
       ],
-      "id": 7
+      "id": 9
     }
   ]
 }

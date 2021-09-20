@@ -2,22 +2,11 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Head from "next/head";
+import Layout from "../components/layout";
 
 const About = () => {
   return (
-    <div>
-      <Head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <link
-          rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        ></link>
-        <link rel="stylesheet" href="static/css/style.css"></link>
-      </Head>
-
-      <Header />
+    <Layout>
       <div className="container col-md-5">
         <h3>สวัสดีครับ </h3>
         <p className="title text-justify mt-4 mb-4">
@@ -28,8 +17,7 @@ const About = () => {
         </p>
         <h4 className="text-success">จาก เฮลตี้ คาเฟ่</h4>
       </div>
-      <Footer company="Olanlab" email="olan@olanlab.com" />
-    </div>
+    </Layout>
   );
 };
 

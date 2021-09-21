@@ -1,16 +1,17 @@
 import React, { Component } from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Head from "next/head";
 import Layout from "../components/layout";
+import axios from "axios";
 
 export class index extends Component {
+  static async getInitialProps() {
+    // await รอให้ได้ข้อมูลก่อนแล้วค่อยทำงาน
+    const res = await axios.get("http://localhost:3001/blogs");
+    return { blogs: res.data };
+  }
+
   render() {
-    return (
-
-        <Layout />
-
-    );
+    console.log(this.props.blogs);
+    return <Layout>TEST</Layout>;
   }
 }
 

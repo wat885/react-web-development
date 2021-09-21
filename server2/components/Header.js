@@ -43,7 +43,6 @@ class Header extends Component {
                 <li className="list-inline-item title"><Link href="/about">เกี่ยวกับเรา</Link></li>
             </ul>  
 
-            test
           </div>
         </div>
         <hr />

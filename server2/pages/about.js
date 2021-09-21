@@ -1,12 +1,9 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Head from "next/head";
 import Layout from "../components/layout";
 
 const About = () => {
   return (
-    <Layout>
+    <Layout title='เกี่ยวกับเรา'>
       <div className="container col-md-5">
         <h3>สวัสดีครับ </h3>
         <p className="title text-justify mt-4 mb-4">
